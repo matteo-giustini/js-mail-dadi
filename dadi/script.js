@@ -4,15 +4,15 @@ Prima di partire a scrivere codice poniamoci qualche domanda:
 Che ci sia un array da qualche parte?
 Se dobbiamo confrontare qualcosa che "cosa" ci serve?*/
 
-/*-1 STABILISCO I NUMERI DA 1 A 6
-  -2 CHIEDO ALL'UTENTE SE VUOLE GIOCARE
-  - SE SI VADO AVANTI
-  - SE NO CHIEDO DI NUOVO
-  -3 ESTRAGGO NUMERO-UTENTE
-  -4 NOTIFICO NUMERO-UTENTE
-  -5 ESTRAGGO NUMERO-CPU 
-  -6 NOTIFICO NUMERO-CPU
-  -COMPARO I DUE NUMERI
-   SE NUTENTE > MAGGIORE NCPU AVVISO
-   SE NUTENTE < MINORE NCPU AVVISO
-   SE NIENTE NUTENTE = NCPU AVVISO
+const userNumber = Math.floor(Math.random() * 6) + 1
+
+const CPUNumber = Math.floor(Math.random() * 6) + 1
+
+if( userNumber > CPUNumber){
+    alert(`il numero di user: ${userNumber} è maggiore di quello della CPU: ${CPUNumber}, HAI VINTO!🤩`)
+} else if (userNumber < CPUNumber){
+    alert(`il numero di user: ${userNumber} è minore di quello della CPU: ${CPUNumber}, HAI PERSO`)
+} else{
+    alert(`il numero di user: ${userNumber} è uguale di quello della CPU: ${CPUNumber}, PAREGGIO! (mezza sconffita)`)
+}
+

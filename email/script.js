@@ -9,8 +9,8 @@ const validEmail = [ 'puffo@gmail.com', 'giselda@gmail.com', 'matteo@gmail.com',
 let validation = false
 //3-CHIEDO DI INSERIRE UNA EMAIL
 let userEmail 
-
  while(!validation) {
+    userEmail= prompt("inserisci la tua email")
 //4 SE L'EMAIL COINCIDE CON UNA DELLA LISTA EMAIL CAMBIO IL PARAMETRO CONFERMA E INVIO MESSAGIO DELL'ESITO POSITIVO
 for (let i=0; i<validEmail.length ; i++) {
     if(userEmail === validEmail[i]){
@@ -20,6 +20,7 @@ for (let i=0; i<validEmail.length ; i++) {
 if( validation) {
     alert(`User ${userEmail} puoi entrare 😘`)
 //  SE NO, INVIO MESSAGGIO DELL'ESITO NEGATIVO E RITORNO AL PUNTO 3
+    
     }else{
     alert("prova un'altra email")
     }

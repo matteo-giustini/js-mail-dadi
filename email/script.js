@@ -11,7 +11,6 @@ let validation = false
 let userEmail 
 
  while(!validation) {
-    userEmail= prompt("inserisci la tua email")
 //4 SE L'EMAIL COINCIDE CON UNA DELLA LISTA EMAIL CAMBIO IL PARAMETRO CONFERMA E INVIO MESSAGIO DELL'ESITO POSITIVO
 for (let i=0; i<validEmail.length ; i++) {
     if(userEmail === validEmail[i]){
